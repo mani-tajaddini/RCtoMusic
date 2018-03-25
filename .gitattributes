@@ -1,0 +1,4 @@
+RCtoMusic filter=lfs diff=lfs merge=lfs -text
+RCtoMusic.exe filter=lfs diff=lfs merge=lfs -text
+/RCtoMusic-darwin-x64/RCtoMusic.app/Contents/Frameworks/Electron[[:space:]]Framework.framework/Versions/A/* filter=lfs diff=lfs merge=lfs -text
+/RCtoMusic-mas-x64/RCtoMusic.app/Contents/Frameworks/Electron[[:space:]]Framework.framework/Versions/A/* filter=lfs diff=lfs merge=lfs -text
