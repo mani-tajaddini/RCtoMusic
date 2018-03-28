@@ -8,7 +8,7 @@ appp.use(bodyParser.urlencoded({extended: false}));
 appp.use(bodyParser.json());
 appp.use(express.static('public'))
 
-appp.listen(process.env.PORT || 8888, function(){
+var server = appp.listen(process.env.PORT || 8888, function(){
   console.log('listening on port 8888')
 })
 
