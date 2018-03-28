@@ -31,6 +31,11 @@ document.getElementById('submitButton2').onclick = function(){
   }))
 }
 
+document.getElementById('float').onclick = function(){
+  document.getElementsByClassName('page1')[0].style.display="block"
+  document.getElementsByClassName('page2')[0].style.display="none"
+}
+
 wsc.onmessage = function(event){
   data = JSON.parse(event.data)
   console.log(JSON.stringify(data.value, null, 2));
@@ -79,13 +84,6 @@ wsc.onmessage = function(event){
           }
         }
       });
-      break;
-    case "command":
-      if(message.value === "restart"){
-        document.getElementsByClassName('page1')[0].style.display="block"
-        document.getElementsByClassName('page2')[0].style.display="none"
-        wsc.send(JSON.stringify({type: "done", value: "done"}))
-      }
       break;
   }
 }
