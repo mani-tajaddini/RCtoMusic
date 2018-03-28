@@ -1,4 +1,7 @@
-var wsc = new WebSocket("ws://" + window.location.hostname + ":9999/")
+// var wsc = new WebSocket("ws://" + window.location.hostname + ":9999/")
+var HOST = location.origin.replace(/^http/, 'ws')
+var wsc = new WebSocket(HOST)
+
 var data
 var setList
 var plotData

@@ -13,7 +13,8 @@ appp.listen(process.env.PORT || 8888, function(){
 })
 
 var WebSocketServer = require('ws').Server
-var wss = new WebSocketServer({port : 9999})
+// var wss = new WebSocketServer({port : 9999})
+var wss = new WebSocketServer({ server })
 
 var outPLot
 var outMusic
