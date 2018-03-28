@@ -2,7 +2,7 @@
   "name": "RCtoMusic",
   "version": "1.0.1",
   "description": "Create melody from recurrence matrix",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
@@ -16,5 +16,8 @@
     "r-script": "0.0.3",
     "ws": "^5.1.0",
     "xmlhttprequest": "^1.8.0"
+  },
+  "engines": {
+    "node": "9.9.0"
   }
 }
